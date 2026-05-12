@@ -6,22 +6,15 @@ API para registrar e analisar sessões de foco e produtividade.
 
 - Python 3.14.4
 - [Poetry](https://python-poetry.org/docs/#installation)
+  > O script run.sh já faz a instalação do poetry, mas caso queria fazer manualmente este é o link.
 
 ## Instalação
 
-```bash
-git clone https://github.com/davidade300/Soujunio_py_backend
-cd sou-junior
-poetry install
-```
+1. git clone https://github.com/davidade300/Soujunio_py_backend
+2. acesse o diretorio do repositorio clonado
+3. Execute o arquivo run.sh:
 
-## Configuração
-
-Crie um arquivo `.env` na raiz do projeto:
-
-```env
-DATABASE_URL=sqlite+aiosqlite:///./dev.db
-```
+> ./run.sh
 
 ## Rodando o projeto
 
@@ -71,4 +64,3 @@ Retorna um diagnóstico baseado em todos os registros salvos.
 Com o servidor rodando, acesse:
 
 - Swagger UI: [http://localhost:8000/docs](http://localhost:8000/docs)
-- Redoc: [http://localhost:8000/redoc](http://localhost:8000/redoc)
